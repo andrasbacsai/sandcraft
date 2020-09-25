@@ -7,6 +7,11 @@ import Packer from "./components/Packer";
     font-family: "Press Start 2P", cursive;
     text-align: center;
   }
+  .is-fixed {
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+  }
 </style>
 <svelte:head>
   <title>SandCraft</title>
@@ -14,9 +19,7 @@ import Packer from "./components/Packer";
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </svelte:head>
-<main class="h-full w-full pb-10 text-white">
-<div class="flex flex-row justify-center items-center py-4">
-<!-- 	<h1 class="text-xl font-bold uppercase border-2 px-4 py-2 rounded">SandCraft</h1> -->
-  </div>
+<a href="https://github.com/andrasbacsai/sandcraft" target="_blank"><i class="nes-icon github is-fixed px-3 mt-2"></i></a>
+<main class="h-full w-full pb-10 pt-5 text-white">
   <Packer/>
 </main>
